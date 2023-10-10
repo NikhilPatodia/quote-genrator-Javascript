@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-Quotes genrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="flex justify-between">
+        <div class="logo  cursor-pointer p-6"><img  src="logo.svg" class="w-36 h-36 relative top-[-46px] p-4"></div>
+        <div class="features absolute left-52 cursor-pointer p-6">
+            <ul class="flex space-x-8 space-y-4 font-bold ">
+                  <li class="mx-4 my-4 hover:underline decoration-2">Home</li>
+                <li class="hover:underline decoration-2 ">About</li>
+                <li class="hover:underline decoration-2 ">Premium</li>
+                <li class="hover:underline decoration-2 ">Learn</li>
+            </ul>
+        </div>
+        <div class="contact  cursor-pointer mr-20">
+            <ul class="font-bold flex p-6 space-x-8 bg">
+                <button class="px-5 py-3 text-black bg-gray-200 border rounded-lg mb-5">Log in</button>
+           <button class="px-5 py-3 text-white bg-black border rounded-lg mb-5">Sing Up</button>
+        </ul>
+        </div>
+    </nav>
+    <div class="content flex justify-center w-[100%]">
+      <div class="container flex flex-col  items-center w-[50%] space-y-8">
+        <div class="head"><span class="font-semibold text-6xl">Motivational  Quotes</span></div>
+        <div class="info"><p>Looking for the perfect words to express the value of friendship? Check out our collection of inspirational friendship quotes that will warm your heart and inspire you to cherish the important relationships in your life</p></div>
+        
+
+
+      </div>
+      
+                         
+                       
+      
+    </div>
+    <div class="button flex justify-center mt-[80px] "><button id="btn" class=" transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  font-semibold rounded-2xl bg-black text-white px-20 py-5">Genrate quotes for Motivation</button></div>
+    <div class="all-quotes w-[100%] flex justify-center h-[100vh] mt-14">
+        <div id="quotes" class="quotes w-[80%]  h-full grid grid-cols-3  gap-2 invisible">
+        
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+            <div id="container" class="box  h-72 bg-gray-300 p-6 mx-6 border rounded-2xl flex justify-center">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 40" fill="none"><path d="M5 36.25H22.5C23.1875 36.25 23.75 35.6875 23.75 35V30H27.5V35C27.5 37.7578 25.2578 40 22.5 40H5C2.24219 40 0 37.7578 0 35V17.5C0 14.7422 2.24219 12.5 5 12.5H10V16.25H5C4.3125 16.25 3.75 16.8125 3.75 17.5V35C3.75 35.6875 4.3125 36.25 5 36.25ZM17.5 23.75H35C35.6875 23.75 36.25 23.1875 36.25 22.5V5C36.25 4.3125 35.6875 3.75 35 3.75H17.5C16.8125 3.75 16.25 4.3125 16.25 5V22.5C16.25 23.1875 16.8125 23.75 17.5 23.75ZM12.5 22.5V5C12.5 2.24219 14.7422 0 17.5 0H35C37.7578 0 40 2.24219 40 5V22.5C40 25.2578 37.7578 27.5 35 27.5H17.5C14.7422 27.5 12.5 25.2578 12.5 22.5Z" fill="#aaa"></path></svg>
+                <p class="para font-semibold text-xl mt-16"></p>
+              </div>
+      
+             
+          
+        
+        </div>
+
+    </div>
+    <!-- image of loading bar -->
+    <!--  -->
+    <script src="app.js"></script>
+</body>
+
+</html>
+
